@@ -1,5 +1,5 @@
 class BankAccount {
-    constructor(accountNumber, balance = 0) {
+    constructor(accountNumber, balance = '00') {
         this.accountNumber = accountNumber;
         this.balance = balance
     };
@@ -56,8 +56,5 @@ class BankAccount {
        }, 5000)
     }
 }
-const rahim = new BankAccount('01903081186', 50000);
-rahim.deposit(220);
-rahim.deposit(500);
-rahim.withdraw(40000);
+const rahim = new BankAccount('01903081186');
 rahim.checkBalance();
