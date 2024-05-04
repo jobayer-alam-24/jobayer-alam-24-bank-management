@@ -39,9 +39,10 @@ class BankAccount {
         }
         else if(draw >= 10000){
             setTimeout(() => {
-                console.log("Sorry! You have to widthdraw below 100000");
+                console.log("Sorry! You have to widthdraw below 100000 & below :" + this.balance);
             }, 4000);
         }
+      
         else { 
             setTimeout(() => {
                 this.balance -= draw;
@@ -56,3 +57,4 @@ class BankAccount {
     }
 }
 const rahim = new BankAccount('01903081186', 50000);
+rahim.withdraw(55000);
